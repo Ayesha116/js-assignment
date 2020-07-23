@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavascriptAssignment</title>
+    <script src="app.js"></script>
+    <style>#more{display: none;}
+    .form input{
+        display: flex;
+        margin-bottom: 10px;
+        
+    }
+    </style>
+</head>
+
+<body>
+        <img src="images/purse1.jpg" onclick="image()" width="400px"alt="Iphone">
+        
+        <img src="images/purse2.jpg" onclick="image()" width="400px" alt="Samsung">
+      
+        <img src="images/purse3.jpg" onclick="image()" width="400px" alt="Huawei"><br>
+     
+        <table id="mytable">
+            <th>No</th>
+            <th>Students</th>
+            <th>Delete</th>
+                <tr><td>1</td>
+                    <td>John</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>2</td>
+                    <td>Smith</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>3</td>
+                    <td>Juliya</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>4</td>
+                    <td>Robert</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>5</td>
+                    <td>Albert</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>6</td>
+                    <td>Leeza</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>7</td>
+                    <td>Justin</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>8</td>
+                    <td>William</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>9</td>
+                    <td>Emir</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>
+                <tr><td>10</td>
+                    <td>James</td>
+                    <td><button onclick="remove(this)">Delete</button></td></tr>    
+        </table>
+        <img onmouseover="over(this)" onmouseout="away(this)" src="images/car1.jpg">
+                            <br><br>
+        <p id="para">0</p>                   
+        <button  onclick="inc()">Increase</button>
+        <button onclick="dec()">Decrease</button><br><br>
+    <form name="myform">    
+        <label>First Name</label>
+        <input name="firstname" id="name" type="text"><br><br>
+        <label>Last Name</label>
+        <input name="lastname" id="name" type="text"><br><br>
+        <label>Password</label>
+        <input name="password"  id="password" type="password"><br><br>
+        <label>date of birth</label>
+        <input name="birth" id="birth" type="date"><br><br>
+        <button onclick="check();return false">Submit</button>
+    </form>
+    <p id="fname"></p>
+    <p id="lname"></p>
+    <p id="hide"></p>
+    <p id="date"></p>
+
+    <h2>Read More Read Less Button</h2>
+    <img src="images/car1.jpg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+    
+
+  
+</body>
+</html>
